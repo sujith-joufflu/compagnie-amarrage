@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compagnie Amarrage | Création de spectacles vivants</title>
+  <meta name="description" content="Compagnie Amarrage, Montreuil : recherche et création théâtrale, production et diffusion de spectacles vivants, ateliers et formations.">
+  <!-- VERSION DE TEST : supprimer la ligne suivante lors de la mise en ligne officielle -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- La mise en page est générée à partir du fichier contenu.js.
+       Pour changer les textes, modifiez contenu.js, pas ce fichier. -->
+
+  <header class="entete">
+    <a href="#accueil" class="entete__nom" data-champ="nom"></a>
+    <button class="menu-bouton" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menu" class="menu">
+      <a href="#compagnie">La compagnie</a>
+      <a href="#spectacles">Spectacles</a>
+      <a href="#ateliers">Ateliers</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#equipe">L'équipe</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="accueil">
+      <img class="accueil__logo" data-image="logo" alt="">
+      <p class="accueil__accroche" data-champ="accueil.accroche"></p>
+      <a href="#spectacles" class="bouton" data-champ="accueil.bouton"></a>
+    </section>
+
+    <section id="compagnie" class="section">
+      <h2 data-champ="compagnie.titre"></h2>
+      <div class="texte texte--large" data-texte="compagnie.texte"></div>
+    </section>
+
+    <section id="spectacles" class="section section--sombre">
+      <h2>Spectacles</h2>
+      <div id="liste-spectacles"></div>
+    </section>
+
+    <section id="ateliers" class="section">
+      <h2 data-champ="ateliers.titre"></h2>
+      <div class="texte texte--large" data-texte="ateliers.texte"></div>
+      <div id="liste-ateliers" class="grille-cartes"></div>
+    </section>
+
+    <section id="agenda" class="section section--clair">
+      <h2>Agenda</h2>
+      <div id="liste-agenda"></div>
+    </section>
+
+    <section id="equipe" class="section">
+      <h2>L'équipe</h2>
+      <div id="liste-equipe" class="equipe"></div>
+    </section>
+
+    <section id="partenaires" class="section section--clair">
+      <h2>Partenaires</h2>
+      <div id="liste-partenaires" class="partenaires"></div>
+    </section>
+
+    <section id="contact" class="section section--sombre">
+      <h2>Contact</h2>
+      <div id="infos-contact" class="contact"></div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p><span data-champ="nom"></span> — <span data-champ="piedDePage.mentions"></span> — <span id="annee"></span></p>
+  </footer>
+
+  <script src="contenu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
